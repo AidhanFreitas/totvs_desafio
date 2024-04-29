@@ -1,0 +1,23 @@
+<div class="form">
+    <main>
+        <h1 class="title">Editar</h1>
+        <form>
+            <label for="username">Nome:</label>
+            <div class="formInput form-group">
+                <input class="form-control" type="text" placeholder="Nome" id="username" [(ngModel)]="Pessoa.nome"
+                    name="nome" />
+            </div>
+            <label for="phone">Telefone:</label>
+            <div class="formInput form-group">
+                <input class="form-control" type="tel" placeholder="Telefone" id="phone"
+                    [(ngModel)]="Pessoa.numeroDeTelefone" name="numeroDeTelefone" />
+            </div>
+
+            <div>
+                <button class="formSubmit" (click)="updatePessoa(Pessoa)" type="submit">
+                    Salvar
+                </button>
+            </div>
+        </form>
+    </main>
+</div>

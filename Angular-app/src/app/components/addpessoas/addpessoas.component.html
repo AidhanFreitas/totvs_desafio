@@ -1,0 +1,21 @@
+<div class="form">
+    <h1 class="title">Cadastrar</h1>
+    <form>
+
+        <div class="formInput form-group">
+            <input class="form-control" type="text" placeholder="Nome" id="username" [(ngModel)]="Pessoa.nome"
+                name="nome" />
+        </div>
+
+        <div class="formInput form-group">
+            <input class="form-control" type="tel" placeholder="Telefone" id="telefone"
+                [(ngModel)]="Pessoa.numeroDeTelefone" name="numeroDeTelefone" />
+        </div>
+
+        <div>
+            <button class="formSubmit" (click)="savePessoa()" type="submit">
+                Cadastrar
+            </button>
+        </div>
+    </form>
+</div>
